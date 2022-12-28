@@ -24,10 +24,10 @@ def Cutting_face_save(img, name, member=''):
 members = ['jhope', 'jimin', 'jin', 'rm', 'suga', 'v']
 
 for member in members:
-    files = os.listdir(f'./img/{member}')
+    files = os.listdir(f'./img_ori/{member}')
 
     for i, file in enumerate(files):
-        img = cv2.imread(f"./img/{member}/"+file)
+        img = cv2.imread(f"./img_ori/{member}/"+file)
         Cutting_face_save(img, i, member)
 
 # %%
